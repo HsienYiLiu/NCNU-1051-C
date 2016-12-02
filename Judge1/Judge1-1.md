@@ -17,11 +17,13 @@
 - *代表地雷
 - 數字代表八個方向的地雷數總和
 #### 範例：
+
+
 ![](https://i.imgur.com/ST66nQd.png)
 
 
 ## Solution
-```C=
+```C
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
