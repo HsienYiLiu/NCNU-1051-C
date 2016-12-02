@@ -10,14 +10,14 @@ void print(char c,int n){
 int main(){
     srand(time(NULL));
     int i,n;
-    int nlen;
+    int nlen = 0;
     int chance;
     int slen = 0;
     int alen = 0;
     int blen = 0;
     int clen = 0;
     int dlen = 0;
-    printf("½Ğ¿é¤J­n´X³s©â¡G");
+    printf("è«‹è¼¸å…¥è¦å¹¾é€£æŠ½ï¼š");
     while( slen < 1){
         scanf("%d",&n);
         nlen = nlen + n;
@@ -52,8 +52,8 @@ int main(){
             printf("\n");
     }
     printf("\n");
-    printf("S¯Å¥d GET!!!");
+    printf("Sç´šå¡ GET!!!");
     printf("\n");
-    printf("¦@©â%d¦¸",nlen);
+    printf("å…±æŠ½%dæ¬¡",nlen);
     printf("\n");
 }
