@@ -1,7 +1,7 @@
 #include <stdio.h>
 //判定是否為質數
-long isPrime(long x) {
-    long i;
+int isPrime(int x) {
+    int i;
     for ( i = 2; i < x; i++ ) {
         if ( x % i == 0 )
             return 0;
@@ -9,17 +9,17 @@ long isPrime(long x) {
     return 1;
 }
 //階層*
-long facial(long n){
-    long i,sum = 0;
+int facial(int n){
+    int i,sum = 0;
     for(i = 1 ; i<= n ; i++){
         sum = sum + i*i;
     }
     return sum;
 }
 //產生質數陣列
-long Primearray(long n,long primearray[]){
+int Primearray(int n,int primearray[]){
     //number每個質數，count放入幾個元素
-    long number = 2,count = 0;
+    int number = 2,count = 0;
     while(count < n){
         while(!isPrime(number)){
             number++;
@@ -30,8 +30,8 @@ long Primearray(long n,long primearray[]){
     }
 }
 //質因數分解
-void seperate(long n,long primearray[]){
-    long i = 0, count = 0;
+void seperate(int n,int primearray[]){
+    int i = 0, count = 0;
     while(n != 1){
         count = 0;
         while(n % primearray[i] == 0){
@@ -44,9 +44,9 @@ void seperate(long n,long primearray[]){
         i++;
     }
 }
-long main(){
-    long n;
-    long primearray[500];
+int main(){
+    int n;
+    int primearray[500];
     scanf("%d", &n);
     Primearray(500,primearray);
     printf("Sum is : %d\n",facial(n));
