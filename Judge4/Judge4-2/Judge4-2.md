@@ -45,6 +45,7 @@ printf("break成功");
 
 #### 範例：
 ---
+```
 請輸入天天狀況
 6 3 2 10
 failure on day 8
@@ -52,8 +53,9 @@ failure on day 8
 6 3 1 10
 success on day 3
 阿萬 win
-
+```
 ---
+```
 請輸入天天狀況
 5 4 2 20
 success on day 2
@@ -61,5 +63,5 @@ success on day 2
 5 3 2 5
 success on day 4
 天天 win
-
+```
 ---
